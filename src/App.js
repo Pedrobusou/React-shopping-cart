@@ -1,10 +1,16 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 
 function App() {
+  const employee = {
+    name: 'Pedro',
+    role: 'Frontend'
+  };
+
   return (
-    <div className="App">
-      <h1>Hello World!</h1>
-    </div>
+    <Fragment>
+      <h1>{employee.name}</h1>
+      <p>{employee.role}</p>
+    </Fragment>
   );
 }
 
