@@ -1,17 +1,8 @@
-import React, {Fragment} from 'react';
+import React from 'react';
+import EmployeeComponent from './components/EmployeeComponent';
 
 function App() {
-  const employee = {
-    name: 'Pedro',
-    role: 'Frontend'
-  };
-
-  return (
-    <Fragment>
-      <h1>{employee.name}</h1>
-      <p>{employee.role}</p>
-    </Fragment>
-  );
+  return <EmployeeComponent />;
 }
 
 export default App;
