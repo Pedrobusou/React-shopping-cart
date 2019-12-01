@@ -1,6 +1,6 @@
 import React, {Component, Fragment} from 'react';
 
-class EmployeeComponent extends Component {
+class EmployeeClassComponent extends Component {
   render() {
     const employee = {
       name: 'Pedro',
@@ -16,4 +16,4 @@ class EmployeeComponent extends Component {
   }
 }
 
-export default EmployeeComponent;
+export default EmployeeClassComponent;
