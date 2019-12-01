@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Products from './components/Products';
+import ProductList from './components/ProductList';
 
 function App() {
   const date = new Date().getFullYear();
@@ -9,7 +9,7 @@ function App() {
   return (
     <Fragment>
       <Header title="Online shop" />
-      <Products />
+      <ProductList />
       <Footer date={date} />
     </Fragment>
   );

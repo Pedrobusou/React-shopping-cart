@@ -1,6 +1,7 @@
 import React, {Component, Fragment} from 'react';
+import Product from './Product';
 
-class Products extends Component {
+class ProductList extends Component {
   state = {
     products: [
       {id: 0, name: 'React tee', price: 10},
@@ -16,9 +17,12 @@ class Products extends Component {
     return (
       <Fragment>
         <h1>Product list</h1>
+        {products.map(product => (
+          <Product key={product.id} product={product} />
+        ))}
       </Fragment>
     );
   }
 }
 
-export default Products;
+export default ProductList;
