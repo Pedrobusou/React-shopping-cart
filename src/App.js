@@ -10,12 +10,14 @@ function App() {
     {id: 2, name: 'Angular tee', price: 15}
   ]);
 
+  const [cart, setCart] = useState([]);
+
   const date = new Date().getFullYear();
 
   return (
     <Fragment>
       <Header title="Online shop" />
-      <ProductList products={products} />
+      <ProductList products={products} cart={cart} setCart={setCart} />
       <Footer date={date} />
     </Fragment>
   );
