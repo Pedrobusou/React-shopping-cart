@@ -19,7 +19,7 @@ function App() {
     <Fragment>
       <Header title="Online shop" />
       <ProductList products={products} cart={cart} setCart={setCart} />
-      <Cart />
+      <Cart cart={cart} />
       <Footer date={date} />
     </Fragment>
   );
