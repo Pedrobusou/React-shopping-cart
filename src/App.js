@@ -1,15 +1,21 @@
-import React, {Fragment} from 'react';
+import React, {Fragment, useState} from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import ProductList from './components/ProductList';
 
 function App() {
+  const [products, setProducts] = useState([
+    {id: 0, name: 'React tee', price: 10},
+    {id: 1, name: 'Git Trousers', price: 20},
+    {id: 3, name: 'Angular tee', price: 15}
+  ]);
+
   const date = new Date().getFullYear();
 
   return (
     <Fragment>
       <Header title="Online shop" />
-      <ProductList />
+      <ProductList products={products} />
       <Footer date={date} />
     </Fragment>
   );
