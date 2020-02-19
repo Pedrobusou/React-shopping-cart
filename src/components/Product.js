@@ -4,7 +4,7 @@ const Product = ({product, cart, setCart}) => {
   const {name, price} = product;
 
   const addProductToCart = product => {
-    console.log(product);
+    setCart([...cart, product]);
   };
 
   return (
