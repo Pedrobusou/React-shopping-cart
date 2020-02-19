@@ -2,6 +2,7 @@ import React, {Fragment, useState} from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import ProductList from './components/ProductList';
+import Cart from './components/cart/Cart';
 
 function App() {
   const [products, setProducts] = useState([
@@ -18,6 +19,7 @@ function App() {
     <Fragment>
       <Header title="Online shop" />
       <ProductList products={products} cart={cart} setCart={setCart} />
+      <Cart />
       <Footer date={date} />
     </Fragment>
   );
