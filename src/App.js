@@ -7,7 +7,7 @@ function App() {
   const [products, setProducts] = useState([
     {id: 0, name: 'React tee', price: 10},
     {id: 1, name: 'Git Trousers', price: 20},
-    {id: 3, name: 'Angular tee', price: 15}
+    {id: 2, name: 'Angular tee', price: 15}
   ]);
 
   const date = new Date().getFullYear();
