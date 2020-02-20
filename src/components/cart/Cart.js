@@ -1,15 +1,20 @@
 import React from 'react';
 import './cart.scss';
+import Product from '../Product';
 
-const Cart = ({cart}) => (
+const Cart = ({cart, setCart}) => (
   <div className="cart">
     <h2>Cart</h2>
 
     {cart.length ? (
-      cart.map(({id, name, price}) => (
-        <p key={id}>
-          {name}.- {price}€
-        </p>
+      cart.map(product => (
+        <Product
+          key={product.id}
+          product={product}
+          inCart={true}
+          cart={cart}
+          setCart={setCart}
+        />
       ))
     ) : (
       <p>Your cart is empty );</p>
